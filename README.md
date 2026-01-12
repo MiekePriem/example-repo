@@ -1,20 +1,19 @@
 # Example Repo – Minesweeper Project
 
 ## Project Description
-This project is a Python implementation of a simplified Minesweeper grid.
+This project is a simple Python program based on the Minesweeper game.
 
-The program takes a 2D list representing a minesweeper board, where:
+It uses a 2D list to represent a grid where:
 - "#" represents a mine
-- "-" represents an empty cell
+- "-" represents an empty space
 
-For each empty cell, the program calculates how many mines are present in the surrounding 8 cells.
+The program checks each empty space and counts how many mines are around it.
 
-## How the Program Works
-- The grid is iterated row by row and column by column
-- If a cell contains a mine ("#"), it is copied directly to the output
-- If the cell is empty ("-"), the program checks all neighbouring cells
-- A counter is used to count how many mines are adjacent
-- The result is returned as a new grid with mine counts
+## How It Works
+- The program goes through the grid one row at a time
+- If a cell is a mine ("#"), it stays the same
+- If a cell is empty ("-"), the program checks the surrounding cells
+- It counts how many mines are next to that cell
+- The result is shown as a new grid with numbers
 
-## Example Output
-The program prints the updated grid showing the number of adjacent mines for each cell.
+This helps show how lists and loops can be used in Python to solve a problem.
